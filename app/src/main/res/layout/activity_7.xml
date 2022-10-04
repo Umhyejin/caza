@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_7">
+
+    <Button
+        android:id="@+id/button_manage"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
+        android:text="카페 관리"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_revice"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="카페 정보 수정"
+        app:layout_constraintEnd_toEndOf="@+id/button_manage"
+        app:layout_constraintStart_toStartOf="@+id/button_manage"
+        app:layout_constraintTop_toBottomOf="@+id/button_manage" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="실시간 자리 업데이트"
+        app:layout_constraintEnd_toEndOf="@+id/button_revice"
+        app:layout_constraintStart_toStartOf="@+id/button_revice"
+        app:layout_constraintTop_toBottomOf="@+id/button_revice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
