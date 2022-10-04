@@ -7,28 +7,31 @@
     tools:context=".Activity_2">
 
 
-    <RadioButton
-        android:id="@+id/radioButton_customer2"
+    <RadioGroup
+        android:id="@+id/type1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="112dp"
-        android:buttonTint="#F44336"
-        android:text="개인 회원"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioButton
-        android:id="@+id/radioButton_owner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="108dp"
-        android:buttonTint="#F44336"
-        android:text="점주 회원"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <RadioButton
+            android:id="@+id/radioButton_customer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F44336"
+            android:text="개인 회원" />
+
+        <RadioButton
+            android:id="@+id/radioButton_owner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F44336"
+            android:text="점주 회원" />
+
+    </RadioGroup>
 
     <EditText
         android:id="@+id/register_id"

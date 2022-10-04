@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioGroup;
 
 public class Activity_3 extends AppCompatActivity {
 
+    private RadioGroup type2;
     private Button button_register2;
 
     @Override

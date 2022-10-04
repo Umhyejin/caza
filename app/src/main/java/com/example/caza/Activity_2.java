@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class Activity_2 extends AppCompatActivity {
 
+    private RadioGroup type1;
     private Button button_register;
+
 
 
     @Override
