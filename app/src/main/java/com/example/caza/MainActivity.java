@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity
         button_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Activity_3.class);
+                Intent intent = new Intent(MainActivity.this, Activity_2.class);
                 startActivity(intent); // 액티비티 이동.
 
             }
