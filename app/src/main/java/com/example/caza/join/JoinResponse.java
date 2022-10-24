@@ -1,4 +1,4 @@
-package com.example.caza;
+package com.example.caza.join;
 
 import com.google.gson.annotations.SerializedName;
 

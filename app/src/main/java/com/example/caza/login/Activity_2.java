@@ -1,20 +1,22 @@
-package com.example.caza;
+package com.example.caza.login;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.example.caza.APIInterface;
+import com.example.caza.join.Activity_3;
+import com.example.caza.Activity_4;
+import com.example.caza.MainActivity;
+import com.example.caza.R;
+import com.example.caza.RetrofitClient;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -1,13 +1,12 @@
 package com.example.caza;
 
-import androidx.annotation.Nullable;
-
-import org.jetbrains.annotations.Contract;
+import com.example.caza.join.JoinData;
+import com.example.caza.join.JoinResponse;
+import com.example.caza.login.LoginData;
+import com.example.caza.login.LoginResponse;
 
 import retrofit2.Call;
 import retrofit2.http.*;
-
-import okhttp3.ResponseBody;
 
 public interface APIInterface {
 

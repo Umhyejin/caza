@@ -16,7 +16,6 @@ package com.example.caza;
         import android.location.Location;
         import android.location.LocationManager;
         import android.os.Bundle;
-        import android.view.MotionEvent;
         import android.widget.Button;
         import android.os.Looper;
         import android.util.Log;
@@ -25,6 +24,7 @@ package com.example.caza;
         import android.widget.Toast;
 
 
+        import com.example.caza.login.Activity_2;
         import com.google.android.gms.location.FusedLocationProviderClient;
         import com.google.android.gms.location.LocationCallback;
         import com.google.android.gms.location.LocationRequest;
