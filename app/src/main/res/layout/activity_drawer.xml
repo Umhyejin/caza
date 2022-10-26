@@ -16,11 +16,28 @@
         android:text="메뉴닫기"/>
 
     <Button
-        android:id="@+id/btn_cafeInform"
+        android:id="@+id/btn_personalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="개인 정보 관리" />
+
+    <Button
+        android:id="@+id/btn_notice"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="카페 정보 수정"/>
+        android:text="공지사항"/>
+
+
+
+    <Button
+        android:id="@+id/btn_unregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="회원탈퇴" />
+
 
     <Button
         android:id="@+id/btn_logout"

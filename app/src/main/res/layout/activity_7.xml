@@ -42,4 +42,17 @@
         app:layout_constraintStart_toStartOf="@+id/button_revice"
         app:layout_constraintTop_toBottomOf="@+id/button_revice" />
 
+    <Button
+        android:id="@+id/button_caferemove"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="카페 삭제"
+        app:layout_constraintEnd_toEndOf="@+id/button_update"
+        app:layout_constraintStart_toStartOf="@+id/button_update"
+        app:layout_constraintTop_toBottomOf="@+id/button_update" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

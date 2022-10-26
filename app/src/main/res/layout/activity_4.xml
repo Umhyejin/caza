@@ -17,18 +17,21 @@
             android:id="@+id/btn_open"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="메뉴열기" />
 
         <Button
             android:id="@+id/button_caferegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="카페 등록" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="카페 관리" />
 
 
