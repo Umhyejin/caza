@@ -28,6 +28,7 @@ public class Activity_5 extends AppCompatActivity {
         Button selectImageBtn = findViewById(R.id.selectImageBtn);
         View imageView = findViewById(R.id.imageView);
 
+//사진등록
         selectImageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

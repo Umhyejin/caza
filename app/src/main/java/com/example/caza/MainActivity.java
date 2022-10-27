@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity
 //드로어 추가한거 끝
 
 //인텐트 시작<1 로그인버튼>
-        button_register = findViewById(R.id.baseView);
+        button_register = findViewById(R.id.btn_login);
         button_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
