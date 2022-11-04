@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".MainActivity">
+    tools:context=".Activity_4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:text="메뉴열기" />
 
         <Button
-            android:id="@+id/button_caferegister"
+            android:id="@+id/btn_cafe_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -37,6 +37,12 @@
 
 
     </LinearLayout>
-    <include layout ="@layout/activity_drawer"/>
+    <include layout="@layout/activity_drawer"/>
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+

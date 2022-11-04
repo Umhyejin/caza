@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawerLayout"
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -80,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
         </FrameLayout>
-//
+
     </RelativeLayout>
 
     <!--드로어 화면이 될 Layout-->
@@ -102,29 +103,14 @@
             android:layout_margin="10dp"
             android:text="로그인" />
 
-        <Button
-            android:id="@+id/View1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_login"
-            android:layout_margin="10dp"
-            android:text="후기 내역" />
-
-        <Button
-            android:id="@+id/View2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/View1"
-            android:layout_margin="10dp"
-            android:text="즐겨찾기"/>
 
         <Button
             android:id="@+id/View3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/View2"
+            android:layout_below="@+id/btn_login"
             android:layout_margin="10dp"
-            android:text="알림신청내역"/>
+            android:text="알림 신청내역"/>
 
         <Button
             android:id="@+id/View4"
