@@ -70,10 +70,10 @@
             android:name=".Activity_4"
             android:exported="true" />
         <activity
-            android:name=".Activity_3"
+            android:name=".join.Activity_3"
             android:exported="true" />
         <activity
-            android:name=".Activity_2"
+            android:name=".login.Activity_2"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
