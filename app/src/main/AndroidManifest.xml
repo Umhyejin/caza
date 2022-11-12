@@ -49,9 +49,6 @@
             android:name=".Activity_10"
             android:exported="true" />
         <activity
-            android:name=".Activity_9_1"
-            android:exported="true" />
-        <activity
             android:name=".Activity_9"
             android:exported="true" />
         <activity
