@@ -20,16 +20,20 @@ import java.io.IOException;
 
 public class Activity_5 extends AppCompatActivity {
 
+    Uri uri;
+    ImageView imageView;
+    View image_register;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_5);
 
-        Button selectImageBtn = findViewById(R.id.selectImageBtn);
-        View imageView = findViewById(R.id.imageView);
+        Button image_register = findViewById(R.id.image_register);
+        imageView = findViewById(R.id.imageView);
 
-//사진등록
-        selectImageBtn.setOnClickListener(new View.OnClickListener() {
+
+        image_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_PICK);
@@ -39,36 +43,25 @@ public class Activity_5 extends AppCompatActivity {
         });
     }
 
-    ActivityResultLauncher<Intent> startActivityResult;
+    ActivityResultLauncher<Intent> startActivityResult = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if( result.getResultCode() == RESULT_OK && result.getData() != null){
 
-    {
-        startActivityResult = registerForActivityResult(
-                new ActivityResultContracts.StartActivityForResult(),
-                new ActivityResultCallback<ActivityResult>() {
-                    @Override
-                    public void onActivityResult(ActivityResult result) {
-                        if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+                        uri = result.getData().getData();
 
-                            Uri uri  = result.getData().getData();
+                        try {
+                            Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
+                            imageView.setImageBitmap(bitmap);
 
-                            try {
-                                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
-                                ImageView imageView = null;
-                                imageView.setImageBitmap(bitmap);
-
-                            } catch (FileNotFoundException e) {
-                                e.printStackTrace();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
+                        }catch (FileNotFoundException e){
+                            e.printStackTrace();
+                        }catch (IOException e){
+                            e.printStackTrace();
                         }
                     }
-                });
-
-
-    }
+                }
+            });
 }
-
-
-
-

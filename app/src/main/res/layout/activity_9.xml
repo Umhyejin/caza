@@ -80,7 +80,7 @@
         tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/cafe_intro"
+        android:id="@+id/cafe_hash"
         android:layout_width="275dp"
         android:layout_height="132dp"
         android:layout_marginStart="32dp"
